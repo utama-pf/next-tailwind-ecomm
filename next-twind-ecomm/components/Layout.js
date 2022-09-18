@@ -19,16 +19,18 @@ export default function Layout({ title, children }) {
             </Link>
             <div>
               <Link href="/cart">
-                <a className="text-lg font-bold">Cart</a>
+                <a className="p-2">Cart</a>
               </Link>
               <Link href="/login">
-                <a className="text-lg font-bold">Login</a>
+                <a className="p-2">Login</a>
               </Link>
             </div>
           </nav>
         </header>
-        <main>{children}</main>
-        <footer>footer</footer>
+        <main className="container m-auto mt-4 px-4">{children}</main>
+        <footer className="flex  h-10 shadow-inner justify-center items-center">
+          Copyright © 2022 Amazona
+        </footer>
       </div>
     </>
   );
